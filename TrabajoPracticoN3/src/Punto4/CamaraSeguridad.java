@@ -15,7 +15,7 @@ public class CamaraSeguridad extends DispositivoInteligente implements Fotografi
 
     @Override
     public void mostrarInfo() {
-        System.out.println("~*~ CAMARA DE SEGURIDAD ~*~");
+        System.out.println("-CAMARA DE SEGURIDAD-");
         System.out.println("Nombre: " + getNombre());
         System.out.println("Resolución: " + resolucionMP + " MP");
     }

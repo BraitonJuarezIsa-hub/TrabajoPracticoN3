@@ -6,9 +6,9 @@ import java.util.List;
 public class Main {
     public static void main() {
         List<DispositivoInteligente> dispositivos = new ArrayList<>();
-        dispositivos.add(new CamaraSeguridad("Camara Seguridad", 8.0));
+        dispositivos.add(new CamaraSeguridad("Camara Seguridad 1", 8.0));
         dispositivos.add(new Termostato("Termostato Sala", 24));
-        dispositivos.add(new SmartPhone("Smartphone", "Galaxy S23+"));
+        dispositivos.add(new SmartPhone("Smartphone de Braiton", "Galaxy S23+"));
 
         System.out.println("-----------------------");
         System.out.println("REPORTE DE DISPOSITIVOS");
@@ -27,7 +27,7 @@ public class Main {
 
         for (DispositivoInteligente d : dispositivos) {
             if (d instanceof ConectableWiFi) {
-                ((ConectableWiFi) d).conectarseAWiFi("CasaSmart");
+                ((ConectableWiFi) d).conectarseAWiFi("CasaInteligente");
             }
         }
 
